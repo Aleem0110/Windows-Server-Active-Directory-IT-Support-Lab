@@ -1,0 +1,84 @@
+LAB VERIFICATION RECORD
+=======================
+
+SERVER
+------
+DC01
+
+
+DOMAIN
+------
+corp.local
+
+
+IDENTITY
+--------
+Active Directory Domain Services configured.
+
+Domain Controller verified.
+
+Departmental Organizational Units created.
+
+
+SECURITY GROUPS
+---------------
+Department-based security groups created.
+
+IT test-user group membership verified.
+
+
+SECURITY POLICIES
+-----------------
+Domain password policy configured.
+
+Account lockout policy configured.
+
+
+FILE SERVER
+-----------
+CompanyData structure created.
+
+IT SMB share configured.
+
+Share path:
+
+\\DC01\IT
+
+
+ACCESS CONTROL
+--------------
+NTFS permissions configured for the IT security group.
+
+SMB share access verified.
+
+
+IMPLEMENTATION FLOW
+-------------------
+Active Directory
+       |
+       +-- Organizational Units
+       |
+       +-- Security Groups
+                |
+                +-- File Server
+                        |
+                        +-- SMB
+                        |
+                        +-- NTFS
+                        |
+                        +-- User Access
+
+
+EVIDENCE
+--------
+Implementation evidence is maintained separately
+in the Evidence directory.
+
+14 screenshots document the major configuration
+and verification steps performed during the lab.
+
+
+PROJECT STATUS
+--------------
+Core Windows Server IT Support lab components
+were configured and verified successfully.
