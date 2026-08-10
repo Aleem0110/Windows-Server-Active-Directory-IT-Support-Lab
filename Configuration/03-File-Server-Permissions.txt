@@ -1,0 +1,69 @@
+FILE SERVER & ACCESS CONTROL CONFIGURATION
+==========================================
+
+STORAGE ROOT
+------------
+C:\CompanyData
+
+
+DEPARTMENT STRUCTURE
+--------------------
+C:\CompanyData
+|
++-- IT
++-- HR
++-- Finance
++-- Sales
++-- Management
+
+
+IT NETWORK SHARE
+----------------
+Share Name:
+IT
+
+Network Path:
+\\DC01\IT
+
+Local Verification:
+\\localhost\IT
+
+
+ACCESS CONTROL
+--------------
+Security Group:
+GG-IT-Users
+
+Permission Model:
+NTFS + SMB
+
+
+ACCESS FLOW
+-----------
+User
+  |
+  +-- GG-IT-Users
+          |
+          +-- SMB Share
+                  |
+                  +-- NTFS Permissions
+                          |
+                          +-- IT Resources
+
+
+SECURITY PRINCIPLE
+------------------
+Access is assigned according to the user's department
+and required job responsibilities.
+
+Users should receive only the permissions necessary
+to perform their assigned tasks.
+
+
+VERIFICATION
+------------
+The IT share was created and access was verified
+during the lab.
+
+NTFS permissions were configured for the IT
+security group.
