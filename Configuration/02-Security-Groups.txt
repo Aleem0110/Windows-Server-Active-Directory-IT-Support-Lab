@@ -1,0 +1,66 @@
+SECURITY GROUP CONFIGURATION
+============================
+
+DOMAIN
+------
+corp.local
+
+
+DEPARTMENT SECURITY GROUPS
+--------------------------
+GG-IT-Users
+GG-HR-Users
+GG-Finance-Users
+GG-Sales-Users
+GG-Management-Users
+
+
+ACCESS MANAGEMENT MODEL
+-----------------------
+User
+  |
+  +-- Security Group
+          |
+          +-- Department Resource
+
+
+IT ACCESS EXAMPLE
+-----------------
+IT Test User
+     |
+     +-- GG-IT-Users
+             |
+             +-- IT Department Resources
+
+
+WHY GROUP-BASED ACCESS?
+-----------------------
+Resource permissions are associated with security groups
+instead of being individually assigned to every user.
+
+Benefits:
+
+- Easier administration
+- Consistent access control
+- Better scalability
+- Simpler onboarding and offboarding
+- Supports least-privilege access
+
+
+SCALABILITY EXAMPLE
+-------------------
+500 Users
+    |
+    +-- Department Security Groups
+              |
+              +-- Department Resources
+
+When a user joins or changes departments, the administrator
+can update group membership without redesigning the underlying
+resource permissions.
+
+
+VERIFICATION
+------------
+IT security-group membership was created and verified
+during the lab.
