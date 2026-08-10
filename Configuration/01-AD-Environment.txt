@@ -1,0 +1,57 @@
+WINDOWS SERVER ACTIVE DIRECTORY LAB
+==================================
+
+SERVER CONFIGURATION
+--------------------
+Server Name: DC01
+Domain: corp.local
+Server Role: Domain Controller
+
+
+CORE SERVICES
+-------------
+Active Directory Domain Services
+DNS
+Group Policy
+
+
+ORGANIZATIONAL UNITS
+--------------------
+IT
+HR
+Finance
+Sales
+Management
+
+
+ACTIVE DIRECTORY MODEL
+----------------------
+User
+  |
+  +-- Department OU
+          |
+          +-- Security Group
+                    |
+                    +-- Authorized Resource
+
+
+ADMINISTRATION MODEL
+--------------------
+Identity management is centralized through Active Directory.
+
+Departmental organization is handled using Organizational Units.
+
+Resource authorization is handled using security groups.
+
+
+SECURITY PRINCIPLE
+------------------
+Least-privilege access is used as the underlying
+access-control principle.
+
+
+LAB SCOPE
+---------
+This configuration represents the Windows Server
+infrastructure actually implemented and verified
+during the lab.
